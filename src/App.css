@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+.app {
+  background-color: rgb(0, 0, 44);
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 44);
+  color: white;
+  height: 16vh;
+  gap: 1rem;
+  padding: 1rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 20%;
+}
+.list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  width: 30%;
+}
+.list li {
+  cursor: pointer;
+}
+.hh {
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: all 0.4s ease-in-out;
+}
+.list li:hover .hh {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  gap: 0.7rem;
+  width: 30%;
+}
+.feat {
+  display: flex;
+}
+.searchbtn {
+  width: 60%;
+  position: relative;
+  border-radius: 10px;
+  padding: 0.3rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.582);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.sinput:focus {
+  border-radius: 10px;
+
+  border: 1px solid red;
+}
+.sinput {
+  position: absolute;
+  height: 6vh;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-inline: 0.3rem;
+  background-color: transparent;
+  outline: red;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.sicon {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+.feat {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.round {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  border-radius: 93px;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b2a5c;
+  border: 1px solid white;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.round:hover {
+  background-color: rgb(236, 30, 65);
+}
+.round:hover .littlecircle {
+  background-color: white;
+  color: rgb(236, 30, 65);
+}
+.ricon {
+  font-size: 1.5rem;
+}
+.littlecircle {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 70%;
+  justify-content: center;
+  background-color: rgb(236, 30, 65);
+}
+.buttons {
+  width: 20%;
+  display: flex;
+  gap: 0.7rem;
+}
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.login {
+  background-color: rgb(236, 30, 65);
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ! HERO */
+
+.hero {
+  height: 100vh;
+
+  background: url("./assets/banner-bg-two.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  padding-inline: 4rem;
+  padding-top: 6rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.topHero {
+  font-size: 2rem;
+  width: 33vw;
+}
+.reserve {
+  background: linear-gradient(90deg, #f01543 -1.58%, #fe724c 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.middleHero {
+  width: 38vw;
+}
+
+.delivery {
+  display: flex;
+  background-color: #fff;
+  width: 50vw;
+  border-radius: 10px;
+  box-shadow: 0px 30px 30px 0px rgba(90, 90, 90, 0.1);
+  gap: 12px;
+  padding: 1rem;
+}
+
+.debtn {
+  background-color: #fff;
+  color: #f01543;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 3rem;
+  border: 1px solid #f01543;
+}
+.deli {
+  background-color: #f01543;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid #f01543;
 }
