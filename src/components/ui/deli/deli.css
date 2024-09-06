@@ -1,0 +1,26 @@
+.debtn {
+  background-color: #fff;
+  color: #f01543;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 3rem;
+  border: 1px solid #f01543;
+}
+.deli {
+  background-color: #f01543;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid #f01543;
+}
